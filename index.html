@@ -1,0 +1,81 @@
+<html>
+  <head>
+    <title>Sith Detector</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="sty/sith.css"/>
+  </head>
+  <body>
+    <h1>Sith Detector</h1>
+
+    <p>World Programming may have been infiltrated by agents of the Sith.
+      Answer the questions below to determine whether your colleagues
+      serve the Dark Side.</p>
+
+    <table class="form">
+      <colgroup>
+	<col style="width: 30%">
+	<col>
+      </colgroup>
+      <tr>
+	<td>
+	  <label for="name">Name</label>
+	</td>
+	<td>
+	  <input type="text" id="name" name="name" value="" placeholder="Name of colleague">
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <label for="jobTitle">Job Title</label>
+	</td>
+	<td>
+	  <input type="text" id="jobTitle" name="jobTitle" value="" placeholder="Their job title">
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <label>Likes Cats</label>
+	</td>
+	<td>
+	  <input type="radio" id="catsYes" name="likesCats" value="yes" checked>
+	  <label for="catsYes">Yes</label>
+	  <input type="radio" id="catsNo" name="likesCats" value="no">
+	  <label for="catsNo">No</label>
+	</td>
+      </tr>
+      <tr>
+	<td>
+	  <label for="language">Favourite Language</label>
+	</td>
+	<td>
+	  <select id="language" name="language" required>
+	    <option value="" disabled selected hidden>Their favourite language</option>
+	    <option value="Assembler">Assembler</option>
+	    <option value="C">C</option>
+	    <option value="C++">C++</option>
+	    <option value="D">D</option>
+	    <option value="Go">Go</option>
+	    <option value="Haskell">Haskell</option>
+	    <option value="Rust">Rust</option>
+	    <option value="Perl">Perl</option>
+	    <option value="Python">Python</option>
+	    <option value="Lisp">Lisp</option>
+	    <option value="Java">Java</option>
+	    <option value="Javascript">Javascript</option>
+	    <option value="R">R</option>
+	    <option value="REXX">REXX</option>
+	    <option value="SAS">SAS</option>
+	    <option value="SCL">SCL</option>
+	  </select>
+	</td>
+      </tr>
+      <tr class="buttons">
+	<td colspan="2">
+	  <button id="checkButton">Sith or Not?</button>
+	</td>
+      </tr>
+    </table>
+
+    <script src="js/detector.js"></script>
+  </body>
+</html>
