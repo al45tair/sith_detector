@@ -76,6 +76,26 @@
       </tr>
     </table>
 
+    <div id="fade" class="hidden"></div>
+
+    <div id="sithPopover" class="popover hidden">
+      <h2>Sith Detected</h2>
+
+      <p>Beware! The <span id="msgJobTitle">person</span> you know as
+	<span id="msgName">Joe Bloggs</span> is really the Sith Lord
+	<span id="msgSithName">Darth Moomin</span>!</p>
+
+      <button id="dismissSith">Oh No!</button>
+    </div>
+
+    <div id="notSithPopover" class="popover hidden">
+      <h2>No Sith Presence Felt</h2>
+
+      <p>I can detect no sign of the Dark Side in <span id="msgName2">Joe Bloggs</span>.</p>
+
+      <button id="dismissNotSith">Phew</button>
+    </div>
+
     <script src="js/detector.js"></script>
   </body>
 </html>
