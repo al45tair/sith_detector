@@ -6,7 +6,7 @@ SithDetector = function() {
 
 SithDetector.prototype = {
     __init__: function() {
-	this.detectorURL = "{{ hub_url }}/environment/demo/run/sith_detector/sith_detector";
+	this.detectorURL = "{{ hub_url }}/environment/demo/run/sith_detector_api/sith_detector";
 	this.auth = btoa('{{ hub_user }}:{{ hub_password }}');
 
 	this.checking = false;
